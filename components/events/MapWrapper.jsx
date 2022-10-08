@@ -3,7 +3,7 @@ import { Wrapper } from "@googlemaps/react-wrapper";
 import MapComponent from "./MapComponent";
 
 const MapWrapper = (props) => (
-  <Wrapper apiKey={"AIzaSyCqk2Mh4b-7jZuBxQovHKyf3lAJiOHJsTU"}>
+  <Wrapper apiKey={""}>
     <MapComponent event={props.event} />
   </Wrapper>
 );
