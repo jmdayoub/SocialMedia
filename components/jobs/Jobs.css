@@ -1,0 +1,18 @@
+button:hover {
+  box-shadow: 0 5px 5px 0 #000000 !important;
+}
+
+img.card-img-top {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0 0 5px 3px lightgray;
+}
+
+div.container-fluid {
+  background-color: #0d6efd;
+  color: white;
+}
