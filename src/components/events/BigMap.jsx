@@ -45,7 +45,7 @@ function BigMap(props) {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyCqk2Mh4b-7jZuBxQovHKyf3lAJiOHJsTU",
+    googleMapsApiKey: "",
   });
 
   const [map, setMap] = React.useState(null);
