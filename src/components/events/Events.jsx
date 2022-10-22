@@ -45,7 +45,7 @@ function Events() {
     result: false,
   });
 
-  Geocode.setApiKey("AIzaSyCqk2Mh4b-7jZuBxQovHKyf3lAJiOHJsTU");
+  Geocode.setApiKey("");
 
   false && _logger("arrayOfEventsLeft", eventLeftState);
   false && _logger("arrayOfEventsRight", eventRightState.arrayOfEvents);
@@ -298,7 +298,7 @@ function Events() {
   //   });
   // };
 
-  Geocode.setApiKey("AIzaSyCqk2Mh4b-7jZuBxQovHKyf3lAJiOHJsTU");
+  Geocode.setApiKey("");
 
   const geoCode = () => {
     Geocode.fromAddress(modalData.address).then((response) => {
@@ -407,7 +407,7 @@ function Events() {
           <div className="eventLeft mx-5">
             <EventLeft event={eventLeftState}></EventLeft>
             <div className="map">
-              <Wrapper apiKey={"AIzaSyCqk2Mh4b-7jZuBxQovHKyf3lAJiOHJsTU"}>
+              <Wrapper apiKey={""}>
                 <MapComponent events={[eventLeftState]}></MapComponent>
               </Wrapper>
             </div>
@@ -416,7 +416,7 @@ function Events() {
         )}
         {allEvents.result && (
           <div className="map mx-5">
-            <Wrapper apiKey={"AIzaSyCqk2Mh4b-7jZuBxQovHKyf3lAJiOHJsTU"}>
+            <Wrapper apiKey={""}>
               <BigMap events={allEvents.total}></BigMap>
             </Wrapper>
           </div>
